@@ -1,0 +1,76 @@
+/* Estilos para el formulario */
+body{
+    background-color: rgb(235, 218, 221);
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+}
+
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    background-color: red;
+}
+
+img{
+    width: 250px;
+    height: 100px;
+}
+
+.clase-padre{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.legend{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.div{
+    width: 100%;
+    padding: 0.2rem;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.input{
+    display: block;
+}
+
+.enviar{
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.enviar:hover{
+    background-color: rgb(230, 230, 221)
+}
+
+.enviar:focus{
+    color: red;
+}
+
+
+@media (min-width:390px) and (max-width:576px){
+    .enviar{
+        background-color: rgb(255, 255, 255);
+        font-size: 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 30%;
+    }
+}

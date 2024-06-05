@@ -1,0 +1,722 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.encabezado {
+  background-color: red;
+  height: 10vh;
+  background: linear-gradient(to right, red, white);
+}
+
+
+
+.caja-padre {
+  display: flex;
+  flex-direction: row; /* Dispone los elementos en fila */
+  justify-content: space-between;
+  /* justify-content: space-between; Distribuye los elementos con espacio entre ellos */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+}
+
+.caja-chica-1 {
+  justify-content: flex-start;
+}
+
+
+.logo {
+  width: 70px;
+  height: 70px;
+  max-width: 90px;
+}
+
+.independiente {
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 55px;
+  left: 60px;
+}
+
+.dropdown{
+  display: none;
+}
+
+
+.menuarriba {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+  
+
+.menuarriba li {
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  bottom: 20px;
+  padding: 0px 20px 0px 10px;
+}
+
+.menuarriba a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+
+
+/* contenido inicio */
+
+.club-a-i {
+  text-align: left;
+  display: flex;
+  color: #ec1c24;
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 1.1%;
+  margin-top: 8px;
+  transition: all 2s;
+}
+
+.dt h2 {
+  text-align: left;
+  font-size: 3rem;
+  margin: 1%;
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.texto {
+  font-size: 2rem;
+  margin: 10px;
+  padding: 8px;
+}
+
+.clase-padre {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* imagen y redes */
+
+.imagen {
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
+}
+
+.imagen img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  top: 30px;
+  right: 100px;
+  line-height: 35px;
+  height: 530px;
+}
+
+.lista-redes {
+  display: flex;
+  list-style-type: none;
+  font-size: 2rem;
+  position: relative;
+  right: 23px;
+  text-align: left;
+}
+
+.lista-redes-responsive li{
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.facebook {
+  position: relative;
+  left: 8px;
+}
+
+.whatsapp {
+  position: relative;
+  left: 4px;
+}
+
+.gmail {
+  position: relative;
+  left: 2px;
+}
+
+.twitter a:hover {
+  color: lightblue;
+}
+
+.facebook a:hover {
+  color: blue;
+}
+
+.whatsapp a:hover {
+  color: rgb(76, 230, 76);
+}
+
+.gmail a:hover {
+  color: rgb(214, 61, 61);
+}
+
+.redes-sociales ul {
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.carousel-slide {
+  width: 400px;
+  height: 400px;
+}
+
+.carousel-inner h2 {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  padding: 0 25px;
+  margin-left: 80.5px;
+  bottom: 120px;
+  color: white;
+  font-size: 2.7rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.carousel-inner a {
+  color: white;
+}
+
+/* plan de estudios */
+
+.plan-de-estudios {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow-x: hidden; /* Previene el desplazamiento horizontal */
+}
+
+.titulo {
+  text-align: start;
+  padding: 2%;
+  margin: 1%;
+  font-family: "Anton", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  
+}
+
+.primer-año p {
+  margin: 0.5%;
+  padding: 2%;
+  position: relative;
+  left: 2px;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  
+}
+
+.c p {
+  padding: 0.7%;
+  margin: 1%;
+  position: relative;
+  left: 8px;
+  font-size: 1.8rem;
+  
+}
+
+.materias {
+  margin: auto;
+}
+
+.materias ul {
+  position: relative;
+  left: 8px;
+  font-size: 1.8rem;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+.b p {
+  padding: 0.7%;
+  margin: 1%;
+  position: relative;
+  top: 5px;
+  left: 8px;
+  font-size: 1.8rem;
+  
+}
+
+.materias-b {
+  padding: 1%;
+  margin: 1%;
+}
+
+.materias-b ul {
+  display: inline;
+  position: relative;
+  left: 16px;
+  bottom: 15px;
+  font-size: 1.8rem;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+ 
+}
+
+.plan-segundo {
+  display: inline;
+  margin-left: 25px;
+  margin-top: 6px;
+  
+}
+
+.segundo-año {
+  display: flex;
+  padding: 1%;
+  margin: 0%;
+  position: relative;
+  top: 55px;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  
+}
+
+.materias-segundo {
+  display: flex;
+  margin: 1%;
+  padding: 1%;
+  
+}
+
+.materias-segundo ul {
+  font-size: 1.8rem;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  position: relative;
+  top: 40px;
+  right: 6px;
+
+}
+
+.plan-tercero {
+  display: inline;
+  margin-left: 100px;
+  margin-top: 60px;
+ 
+}
+
+.tercer-año {
+  display: flex;
+  padding: 1%;
+  margin: 0%;
+  position: relative;
+  font-size: 1.8rem;
+  text-decoration: underline;
+ 
+}
+
+.materias-tercero {
+  display: flex;
+  position: relative;
+  left: 5px;
+  font-size: 1.8rem;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+ 
+}
+
+
+/* DOCUMENTACION */
+
+.documentacion {
+  padding: 2.2%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.documentacion h2 {
+  padding: 2%;
+  margin: 1%;
+  font-family: "Anton", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  position: relative;
+  top: 20px;
+}
+
+.requisitos ul {
+  padding: 2%;
+  margin: 1%;
+  font-size: 1.8rem;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  list-style: none;
+  position: relative;
+  bottom: 40px;
+}
+
+.documentacion a {
+  color: red;
+  text-decoration: none;
+}
+
+.documentacion a:hover {
+  text-decoration: underline;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1%;
+  font-size: 1.8rem;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  list-style: none;
+  position: relative;
+  bottom: 85px;
+  left: 35px;
+}
+
+.formulario a {
+  color: white;
+}
+
+/* Contacto */
+
+.contacto {
+  padding: 2%;
+  margin: 2.5%;
+  margin-left: 70px;
+  position: relative;
+  bottom: 80px;
+}
+
+.contacto h2 {
+  display: flex;
+  position: relative;
+  font-family: "Anton", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.contacto p {
+  display: flex;
+  position: relative;
+  font-size: 1.8rem;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: rgb(245, 47, 47);
+  width: 40vh;
+}
+
+.contacto-email {
+  font-size: 2rem;
+  color: red;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+
+/* historia del club */
+
+.historia {
+  margin: 2%;
+  padding: 2%;
+  margin-left: 70px;
+}
+
+.historia h2 {
+  position: relative;
+  font-family: "Anton", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.dts-campeones {
+  display: flex;
+  position: relative;
+  top: 20px;
+}
+
+.dts-campeones p {
+  font-size: 1.8rem;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.dts-campeones strong {
+  font-weight: bold;
+}
+
+.galeria-imagenes img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.galeria-imagenes {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-auto-rows: 300px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+/* footer */
+
+.footer {
+  background-color: red;
+  width: 100%;
+  height: 30vh;
+}
+
+.footer-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-2 {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 50px;
+}
+
+
+.footer-2 li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.footer-2 a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* resolucion para celular */
+
+@media (max-width:576px){
+  .menuarriba{
+    display: none;
+  }
+
+  .dropdown{
+    display: flex;
+    position: relative;
+    right: 40px;
+    bottom: 20px;   
+  }
+  .dropdown-menu li{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dropdown-menu a:hover{
+    color: red;
+  }
+
+  .clase-padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen {
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    position: relative;
+    top: 35px;
+  }
+  .lista-redes{
+    display: none
+  }
+
+  .lista-redes-responsive li{
+    display: inline;
+    font-size: 2rem;
+    position: relative;
+    left: 78px;
+    top: 40px;
+  }
+ 
+  .carousel-inner{
+    position: relative;
+    top: 30px;
+    left: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .plan-de-estudios {
+    display: block;
+    
+  }
+  .plan-segundo {
+    display: inline;
+    margin-left: 12px;
+    position: relative;
+    bottom: 35px;
+  }
+  .plan-tercero {
+    display: inline;
+    position: relative;
+    left: 2px;
+    bottom: 20px;
+  }
+  .documentacion {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 20px;
+  }
+  
+  .documentacion h2 {
+   
+    font-family: "Anton", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+  }
+  
+  .requisitos ul {
+   
+    font-size: 1.8rem;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    list-style: none;
+    position: relative;
+    bottom: 0px;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1%;
+    font-size: 1.8rem;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    list-style: none;
+    position: relative;
+    bottom: 12px;
+    left: 15px;
+  }
+  .contacto {
+    margin-left: 70px;
+    position: relative;
+    top: 55px;
+    right: 65px;
+  }
+  .historia {
+    margin-left: 5px;
+    position: relative;
+    top: 100px;
+  }
+  .galeria-imagenes {
+    width: 90%;
+    max-width: 400px;
+    margin: 140px auto;
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+}
+}

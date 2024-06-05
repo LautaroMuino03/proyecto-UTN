@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción</title>
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+
+<body>
+    <form action="" method="post" class="formulario"></form>
+    <fieldset class="fieldset">
+
+        <legend class="legend">Formulario</legend>
+        <img src="../imagenes/diablito-removebg-preview.png" alt="diablito"> 
+        <div class="clase-padre">
+            <div class="div">
+                <label for="email" class="label">Correo electrónico</label>
+                <input type="email" name="email" id="email" class="input" placeholder="Tu respuesta">
+            </div>
+            <div class="div">
+                <label>Marcar la que corresponda</label><br>
+                <input type="radio" name="año"> 1° AÑO LICENCIA C/B <br>
+                <input type="radio" name="año"> 2° AÑO LICENCIA A <br>
+                <input type="radio" name="año"> 3° AÑO LICENCIA PRO
+            </div>
+            <div class="div">
+                <label for="text" class="label">Apellido</label>
+                <input type="text" name="text" id="text" class="input" placeholder="Tu respuesta">
+            </div>
+            <div class="div">
+                <label for="text" class="label">Nombre</label>
+                <input type="text" name="text" id="text" class="input" placeholder="Tu respuesta">
+            </div>
+
+            <div class="div">
+                <label>Estado civil</label><br>
+                <input type="radio" name="año"> SOLTERO <br>
+                <input type="radio" name="año"> CASADO <br>
+                <input type="radio" name="año"> OTRO
+            </div>
+            <div class="div">
+                <label for="dni">Dni</label>
+                <input type="number" id="dni" class="input" placeholder="Tu documento">
+            </div>
+
+            <div class="div">
+                <label for="dob">Fecha de Nacimiento:</label>
+                <input type="date" id="dob" name="dob" class="input">
+            </div>
+
+            <div class="div">
+                <label for="telefono">Celular/Teléfono</label>
+                <input type="number" id="telefono" class="input" placeholder="Tu número">
+            </div>
+
+            <div class="div">
+                <label for="text" class="label">País donde vive</label>
+                <input type="text" name="text" id="text" class="input" placeholder="Tu respuesta">
+            </div>
+
+            <div class="div">
+                <label for="text" class="label">Provincia</label>
+                <input type="text" name="text" id="text" class="input" placeholder="Tu respuesta">
+            </div>
+
+            <div class="div">
+                <label for="codigo" class="label">Código postal</label>
+                <input type="number" id="codigo" class="input" placeholder="Tu respuesta">
+            </div>
+
+            <div class="div">
+                <label>Sexo:</label><br>
+                <input type="radio" name="año"> MASCULINO <br>
+                <input type="radio" name="año"> FEMENINO 
+            </div>
+
+            <div class="div">
+                <label>Termino el secundario?</label><br>
+                <input type="radio" name="año"> SI <br>
+                <input type="radio" name="año"> NO 
+            </div>
+        </div>
+
+        <input type="submit" value="enviar" class="enviar">
+        </form>
+    </fieldset>
+</body>
+
+</html>
