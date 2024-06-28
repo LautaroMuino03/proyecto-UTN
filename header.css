@@ -24,15 +24,10 @@ body {
   padding: 0;
 }
 
+
+
+
 /*
-.encabezado {
-  background-color: red;
-  height: 10vh;
-  background: linear-gradient(to right, red, white);
-}
-
-
-
 .caja-padre {
   display: flex;
   flex-direction: row; /* Dispone los elementos en fila */
