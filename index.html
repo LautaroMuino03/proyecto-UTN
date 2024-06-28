@@ -14,44 +14,40 @@
 
 
 <header class="encabezado">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="">
+        <img src="/imagenes/escudo.png" alt="escudo.cai">
+      </a>
+      <h2 class="independiente">Independiente</h2>
+      <button class="navbar-toggler b" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#plan-de-estudios">Plan de estudios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#inscripcion">Inscribirse</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#contacto-num">Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#historia">Historia</a>
+          </li>
 
 
 
-  <section>
-    <div class="caja-padre">
-      <div class="caja-chica-1">
-        <img class="logo" src="./imagenes/escudo.png" alt="no encontrado">
-        <h1 class="independiente">independiente</h1>
+        </ul>
       </div>
-      <div class="caja-chica-2">
-        <nav class="nav" id="nav">
-          <ul class="menuarriba">
-            <li><a href="#plan-de-estudios" class="link">Plan de estudios</a></li>
-            <li><a href="#inscripcion" class="link">Inscribirse</a></li>
-            <li><a href="#contacto-num" class="link">Contacto</a></li>
-            <li><a href="#historia" class="link">Historia</a></li>
-          </ul>
-          <div class="dropdown">
-            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#plan-de-estudios" class="link">Plan de estudios</a></li>
-              <li><a href="#inscripcion" class="link">Inscribirse</a></li>
-              <li><a href="#contacto-num" class="link">Contacto</a></li>
-              <li><a href="#historia" class="link">Historia</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
     </div>
-
-
-
-  </section>
+  </nav>
 </header>
 
 <div class="animate__animated animate__backInRight animate__delay-0.5s">
@@ -343,39 +339,51 @@
 </div>
 
 
-
-<footer class="footer">
-  <div class="footer-1">
-    <img src="./imagenes/logocai.jpg" alt="cai">
-  </div>
-  <div class="footer-2">
-    <ul>
-      <li>
-        <h4>
-          <a href="/institucion/sedes/avellaneda"><span>SEDE SOCIAL </span><span>-</span><span> AVELLANEDA</span></a>
-        </h4>
-      </li>
-      <li><i class="fa-solid fa-location-dot"></i><span> Av. Mitre 470 (1870).</span></li>
-      <li><span class="telefono"><span class="fa-solid fa-phone-volume"></span>
-          <a href="tel:4229-7600"> 4229-7600</a></span></li>
-      <li><span class="correo"><span class="fa-solid fa-envelope"></span><a
-            href="mailto:socios@clubaindependiente.com.ar"> socios@clubaindependiente.com.ar</a></span></li>
-    </ul>
-
-    <ul>
-      <li>
-        <h4>
-          <a href="/institucion/sedes/capital"><span>SEDE BOYACA </span><span>-</span><span> CAPITAL</span></a>
-        </h4>
-      </li>
-      <li><i class="fa-solid fa-location-dot"></i><span> Boyaca 470.</span></li>
-      <li><span class="telefono"><span class="fa-solid fa-phone-volume"></span>
-          <a href="tel:4633-7527"> 4633-7527</a></span></li>
-      <li><span class="correo"><span class="fa-solid fa-envelope"></span><a
-            href="mailto:boyaca@clubaindependiente.com.ar"> boyaca@clubaindependiente.com.ar</a></span></li>
-    </ul>
+<footer class="bg-danger text-dark pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row text-center text-md-start justify-content-center">
+      <div class="col-12 d-flex justify-content-center">
+        <img src="./imagenes/logocai.jpg" alt="logo-cai" class="img-fluid">
+      </div>
+      <div class="col-12">
+        <hr class="mb-4">
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
+        <ul class="list-unstyled">
+          <li>
+            <h4>
+              <span>SEDE SOCIAL </span><span>-</span><span> AVELLANEDA</span>
+            </h4>
+          </li>
+          <li><i class="fa-solid fa-location-dot"></i><span> Av. Mitre 470 (1870).</span></li>
+          <li><span class="telefono"><span class="fa-solid fa-phone-volume"></span>
+              <a href="tel:4229-7600"> 4229-7600</a></span></li>
+          <li><span class="correo"><span class="fa-solid fa-envelope"></span><a
+                href="mailto:socios@clubaindependiente.com.ar"> socios@clubaindependiente.com.ar</a></span></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-6 mt-3">
+        <ul class="list-unstyled">
+          <li>
+            <h4>
+              <span>SEDE BOYACA </span><span>-</span><span> CAPITAL</span>
+            </h4>
+          </li>
+          <li><i class="fa-solid fa-location-dot"></i><span> Boyaca 470.</span></li>
+          <li><span class="telefono"><span class="fa-solid fa-phone-volume"></span>
+              <a href="tel:4633-7527"> 4633-7527</a></span></li>
+          <li><span class="correo"><span class="fa-solid fa-envelope"></span><a
+                href="mailto:boyaca@clubaindependiente.com.ar"> boyaca@clubaindependiente.com.ar</a></span></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
+
+
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
