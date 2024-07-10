@@ -541,7 +541,7 @@ footer ul a:hover{
 
 /* resolucion para celular */
 
-@media (max-width:576px){
+@media (max-width:991px) {
   .menuarriba{
     display: none;
   }
@@ -556,7 +556,7 @@ footer ul a:hover{
     font-size: 1.3rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
   }
   
   .dropdown-menu a:hover{
@@ -676,3 +676,7 @@ footer ul a:hover{
 }
 
 }
+
+
+
+
